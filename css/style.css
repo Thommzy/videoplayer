@@ -1,0 +1,34 @@
+:root {
+  --primary-medium-grey: #666;
+  --primary-white: #fff;
+  --primary-black: #000;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: var(--primary-medium-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--primary-white);
+}
+
+.screen {
+  cursor: pointer;
+  width: 50%;
+  background-color: var(--primary-black) !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
