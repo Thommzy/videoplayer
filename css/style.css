@@ -2,6 +2,10 @@
   --primary-medium-grey: #666;
   --primary-white: #fff;
   --primary-black: #000;
+  --secondary-black: #333;
+  --transparent: transparent;
+  --primary-green: #28a745;
+  --primary-red: #dc3545;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
@@ -27,8 +31,55 @@ h1 {
 
 .screen {
   cursor: pointer;
-  width: 50%;
+  width: 65%;
   background-color: var(--primary-black) !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.controls {
+  background-color: var(--secondary-black);
+  color: var(--primary-white);
+  width: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: var(--transparent);
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: var(--primary-green);
+}
+
+.controls .fa-stop {
+  color: var(--primary-red);
+}
+
+.controls .fa-pause {
+  color: var(--primary-white);
+}
+
+.controls .timestamp {
+  color: var(--primary-white);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
 }
